@@ -1,8 +1,19 @@
 <?xml version="1.0"?>
 <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
-    <mime-type type="text/x-python">
-        <comment>Python script</comment>
-        <glob pattern="*.py"/>
-        <icon name="text-x-python"/>
+    <mime-type type="text/x-java">
+        <comment>Java Source File</comment>
+        <glob pattern="*.java"/>
+        <icon name="text-x-java"/>
+    </mime-type>
+    <mime-type type="text/x-kotlin">
+        <comment>Kotlin Source File</comment>
+        <glob pattern="*.kt"/>
+        <glob pattern="*.kts"/>
+        <icon name="text-x-kotlin"/>
+    </mime-type>
+    <mime-type type="text/x-gradle">
+        <comment>Gradle Build Script</comment>
+        <glob pattern="*.gradle"/>
+        <icon name="text-x-gradle"/>
     </mime-type>
 </mime-info>

@@ -1,10 +1,11 @@
 [Desktop Entry]
-Name=PyCharm Community Edition
-GenericName=The intelligent Python IDE
-Exec=pycharm-community
+Name=IntelliJ IDEA Community Edition
+GenericName=Java IDE
+Comment=IntelliJ IDEA Community Edition is the open source version of IntelliJ IDEA, an IDE for Java and other programming languages
+Exec=intellij-community
 Terminal=false
-Icon=pycharm-community
+Icon=intellij-community
 Type=Application
-Categories=Development;IDE;
-StartupWMClass=jetbrains-pycharm-ce
-MimeType=text/plain;application/x-python-code;text/x-python;application/xml;text/markdown;
+Categories=Development;IDE;Java;
+StartupWMClass=jetbrains-idea-ce
+MimeType=text/plain;text/x-java;text/x-kotlin;text/x-gradle;text/xml;text/markdown;
