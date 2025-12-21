@@ -25,14 +25,8 @@ Summary:       IntelliJ IDEA Community Edition
 License:       Apache-2.0
 URL:           https://www.jetbrains.com/idea/
 
-# Official GitHub Binary Asset
-# Conditional source selection based on target architecture
-%ifarch x86_64
+# Source0: x86_64 binary
 Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}.tar.gz
-%endif
-%ifarch aarch64
-Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}-aarch64.tar.gz
-%endif
 
 Source101:     %{name}.xml
 Source102:     %{name}.desktop
@@ -50,17 +44,18 @@ Requires:      git
 ExclusiveArch: x86_64
 
 %description
-IntelliJ IDEA is an Integrated Development Environment (IDE) for professional development in Java and Kotlin. It is designed to maximize developer productivity and has
-a strong focus on privacy and security. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings. 
-It lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
+IntelliJ IDEA Community Edition is the open source version of IntelliJ IDEA,
+an IDE for Java, Kotlin, Groovy, and other programming languages.
 
 %prep
+# Standard setup for x86_64 single source
 %setup -q -c
 
 # Move contents from the versioned directory to the top level
-mv idea-IC-*/* .
-mv idea-IC-*/.* . 2>/dev/null || :
-rmdir idea-IC-*
+# Glob 'idea-*' covers both 'idea-IC-...' and 'idea-2025...' patterns
+mv idea-*/* .
+mv idea-*/.* . 2>/dev/null || :
+rmdir idea-*
 
 # Removing trialware plugins or strict cleanup if needed
 # rm -rf plugins/{...}
@@ -78,7 +73,6 @@ if [ -f %{buildroot}%{_javadir}/%{name}/bin/restarter ]; then
     chmod +x %{buildroot}%{_javadir}/%{name}/bin/restarter
 fi
 
-
 # Installing icons...
 install -d %{buildroot}%{_datadir}/pixmaps
 if [ -f bin/idea.png ]; then
@@ -92,6 +86,16 @@ if [ -f bin/idea.svg ]; then
     install -m 0644 -p bin/idea.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 fi
 
+# Creating additional PNG icons on the fly...
+if [ -f bin/idea.svg ]; then
+    for size in 16 22 24 32 48 64 128 256; do
+        dest=%{buildroot}%{_datadir}/icons/hicolor/${size}x${size}/apps
+        install -d ${dest}
+        rsvg-convert -w ${size} -h ${size} bin/idea.svg -o ${dest}/%{name}.png
+        chmod 0644 ${dest}/%{name}.png
+        touch -r bin/idea.svg ${dest}/%{name}.png
+    done
+fi
 
 # Installing metainfo...
 install -d %{buildroot}%{_metainfodir}
@@ -125,6 +129,6 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Sun Dec 21 2025 User <ruan.ruan.barros@peppo.dev> - 2025.3.1-1
-- Init repository on version 2025.3.1 using GitHub binary asset
-
+* Sun Dec 21 2024 User <user@example.com> - 2025.3.1-1
+- Remove aarch64 support to simplify package
+- Target only x86_64
