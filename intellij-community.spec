@@ -26,7 +26,13 @@ License:       Apache-2.0
 URL:           https://www.jetbrains.com/idea/
 
 # Official GitHub Binary Asset
+# Conditional source selection based on target architecture
+%ifarch x86_64
 Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}.tar.gz
+%endif
+%ifarch aarch64
+Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}-aarch64.tar.gz
+%endif
 
 Source101:     %{name}.xml
 Source102:     %{name}.desktop
@@ -41,11 +47,12 @@ Requires:      hicolor-icon-theme
 Requires:      javapackages-filesystem
 Requires:      git
 
-ExclusiveArch: x86_64 aarch64
+ExclusiveArch: x86_64
 
 %description
-IntelliJ IDEA Community Edition is the open source version of IntelliJ IDEA,
-an IDE for Java, Kotlin, Groovy, and other programming languages.
+IntelliJ IDEA is an Integrated Development Environment (IDE) for professional development in Java and Kotlin. It is designed to maximize developer productivity and has
+a strong focus on privacy and security. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings. 
+It lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
 
 %prep
 %setup -q -c
@@ -118,6 +125,6 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Sun Dec 21 2025 User <ruan.victor21052000@gmail.com> - 2025.3.1-1
+* Sun Dec 21 2025 User <ruan.ruan.barros@peppo.dev> - 2025.3.1-1
 - Init repository on version 2025.3.1 using GitHub binary asset
 

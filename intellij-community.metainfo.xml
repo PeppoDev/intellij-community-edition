@@ -2,26 +2,31 @@
 <component type="desktop-application">
     <id>com.jetbrains.IntelliJ-Community</id>
     <name>IntelliJ IDEA Community</name>
-    <summary>Intellij IEA Community Edition</summary>
+    <summary>Capable and Ergonomic IDE for JVM</summary>
     <description>
-        <p>IntelliJ IDEA Community Edition is an IDE for Java and Kotlin development.</p>
+        <p>IntelliJ IDEA is an Integrated Development Environment (IDE) for professional development in Java and Kotlin. It is designed to maximize developer productivity and has
+        a strong focus on privacy and security. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings. 
+        It lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
+        </p>
     </description>
     <metadata_license>CC-BY-SA</metadata_license>
     <project_license>Apache-2.0</project_license>
     <developer_name>JetBrains s.r.o.</developer_name>
     <screenshots>
-    <!-- TODO: SEE WHAT URL SHOULD BE HERE -->
         <screenshot type="default">
-           https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg
+            <image>https://dl.flathub.org/media/com/jetbrains/IntelliJ-IDEA-Ultimate/5b1db4a055afb01a2e091287e5c01ab2/screenshots/image-1_orig.webp</image>
         </screenshot>
         <screenshot>
-           https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg
+            <image>https://dl.flathub.org/media/com/jetbrains/IntelliJ-IDEA-Ultimate/5b1db4a055afb01a2e091287e5c01ab2/screenshots/image-2_orig.webp</image>
         </screenshot>
     </screenshots>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA</url>
     <url type="help">https://www.jetbrains.com/help/idea/</url>
     <launchable type="desktop-id">intellij-community.desktop</launchable>
-    <updatecontact>https://github.com/PeppoDev/intellij-community-edition/issues</updatecontact>
+    <provides>
+        <binary>intellij-community</binary>
+    </provides>
     <content_rating type="oars-1.1"/>
+    <updatecontact>https://github.com/PeppoDev/intellij-community-edition/issues</updatecontact>
 </component>
