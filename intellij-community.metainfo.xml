@@ -2,33 +2,26 @@
 <component type="desktop-application">
     <id>com.jetbrains.IntelliJ-Community</id>
     <name>IntelliJ IDEA Community</name>
-    <summary>Capable and Ergonomic IDE for JVM</summary>
+    <summary>Intellij IEA Community Edition</summary>
     <description>
-        <p>IntelliJ IDEA Community Edition is an IDE for Java and Kotlin development. It includes support for Groovy, Scala, Android, Maven, Gradle, and more.</p>
-        <p>Key features include:</p>
-        <ul>
-            <li>Smart code completion and analysis</li>
-            <li>Powerful refactorings</li>
-            <li>Instant code navigation</li>
-            <li>Integration with build tools (Maven, Gradle, Ant)</li>
-            <li>Version control systems support (Git, SVN, Mercurial)</li>
-            <li>Android development support</li>
-        </ul>
+        <p>IntelliJ IDEA Community Edition is an IDE for Java and Kotlin development.</p>
     </description>
     <metadata_license>CC-BY-SA</metadata_license>
     <project_license>Apache-2.0</project_license>
     <developer_name>JetBrains s.r.o.</developer_name>
     <screenshots>
+    <!-- TODO: SEE WHAT URL SHOULD BE HERE -->
         <screenshot type="default">
-            <image>https://www.jetbrains.com/idea/img/screenshots/2024.1/idea-overview.png</image>
+           https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg
+        </screenshot>
+        <screenshot>
+           https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg
         </screenshot>
     </screenshots>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA</url>
     <url type="help">https://www.jetbrains.com/help/idea/</url>
     <launchable type="desktop-id">intellij-community.desktop</launchable>
-    <provides>
-        <binary>intellij-community</binary>
-    </provides>
+    <updatecontact>https://github.com/PeppoDev/intellij-community-edition/issues</updatecontact>
     <content_rating type="oars-1.1"/>
 </component>
