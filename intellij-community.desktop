@@ -7,5 +7,5 @@ Terminal=false
 Icon=intellij-community
 Type=Application
 Categories=Development;IDE;Java;
-StartupWMClass=jetbrains-idea-ce
+StartupWMClass=jetbrains-idea
 MimeType=text/plain;text/x-java;text/x-kotlin;text/x-gradle;text/xml;text/markdown;
