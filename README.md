@@ -1,10 +1,9 @@
-pycharm-community-edition
+Intellij-community-edition
 =========================
 
-[![PyCharm build status](https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/package/pycharm-community/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/package/pycharm-community/)
-[![Plugins build status](https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/package/pycharm-community-plugins/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/package/pycharm-community-plugins/)
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/pepposo/IntellijCommunity/package/intellij-community/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/pepposo/IntellijCommunity/package/intellij-community/)
 
-PyCharm Community Edition IDE editor for developing not only python applications.
+Intellij Community Edition IDE editor for developing.
 
 This GIT repository contains files necessary for building RPMs for Fedora/RHEL.
 
