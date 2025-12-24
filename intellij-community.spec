@@ -129,9 +129,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Sun Dec 24 2024 User <user@example.com> - 2025.3.1-2
+* Sun Dec 24 2024 User <ruan.barros@peppo.dev>> - 2025.3.1-2
 - Update desktop entry
 
-* Sun Dec 21 2024 User <user@example.com> - 2025.3.1-1
-- Remove aarch64 support to simplify package
-- Target only x86_64
+* Sun Dec 21 2024 User <ruan.barros@peppo.dev> - 2025.3.1-1
+- Remove aarch64 support to simplify package, targeting only x86_64
+- Init the package
