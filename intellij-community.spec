@@ -129,7 +129,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Sun Dec 24 2024 User <ruan.barros@peppo.dev>> - 2025.3.1-2
+* Wen Dec 24 2024 User <ruan.barros@peppo.dev>> - 2025.3.1-2
 - Update desktop entry
 
 * Sun Dec 21 2024 User <ruan.barros@peppo.dev> - 2025.3.1-1
