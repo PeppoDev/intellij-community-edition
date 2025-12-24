@@ -19,7 +19,7 @@
 
 Name:          %{appname}-community
 Version:       2025.3.1
-Release:       1%{?dist}
+Release:       2%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
 License:       Apache-2.0
@@ -129,6 +129,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
+* Sun Dec 24 2024 User <user@example.com> - 2025.3.1-2
+- Update desktop entry
+
 * Sun Dec 21 2024 User <user@example.com> - 2025.3.1-1
 - Remove aarch64 support to simplify package
 - Target only x86_64
