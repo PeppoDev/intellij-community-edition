@@ -18,8 +18,8 @@
 %global __requires_exclude_from %{_javadir}/%{name}/jbr/.*|%{_javadir}/%{name}/lib/.*|%{_javadir}/%{name}/plugins/.*
 
 Name:          %{appname}-community
-Version:       2025.3.1
-Release:       2%{?dist}
+Version:       2025.3.1.1
+Release:       1%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
 License:       Apache-2.0
@@ -129,9 +129,12 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Sun Dec 24 2024 User <ruan.barros@peppo.dev>> - 2025.3.1-2
+* Thu Jan 8 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
+- Update the bin to 2025.3.1.1
+
+* Wen Dec 24 2025 User <ruan.barros@peppo.dev>> - 2025.3.1-2
 - Update desktop entry
 
-* Sun Dec 21 2024 User <ruan.barros@peppo.dev> - 2025.3.1-1
+* Sun Dec 21 2025 User <ruan.barros@peppo.dev> - 2025.3.1-1
 - Remove aarch64 support to simplify package, targeting only x86_64
 - Init the package
