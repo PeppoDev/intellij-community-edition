@@ -132,7 +132,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 * Thu Jan 8 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
 - Update the bin to 2025.3.1.1
 
-* Wen Dec 24 2025 User <ruan.barros@peppo.dev>> - 2025.3.1-2
+* Wed Dec 24 2025 User <ruan.barros@peppo.dev>> - 2025.3.1-2
 - Update desktop entry
 
 * Sun Dec 21 2025 User <ruan.barros@peppo.dev> - 2025.3.1-1
