@@ -18,7 +18,7 @@
 %global __requires_exclude_from %{_javadir}/%{name}/jbr/.*|%{_javadir}/%{name}/lib/.*|%{_javadir}/%{name}/plugins/.*
 
 Name:          %{appname}-community
-Version:       2025.3.1.1
+Version:       2025.2.6.1
 Release:       1%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
@@ -129,6 +129,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
+* Wed Jan 14 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
+- Update the bin to 2025.2.6.1
+
 * Thu Jan 8 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
 - Update the bin to 2025.3.1.1
 
