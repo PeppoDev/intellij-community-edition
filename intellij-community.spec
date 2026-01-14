@@ -26,7 +26,7 @@ License:       Apache-2.0
 URL:           https://www.jetbrains.com/idea/
 
 # Source0: x86_64 binary
-Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}.tar.gz
+Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/ideaIC-%{version}.tar.gz
 
 Source101:     %{name}.xml
 Source102:     %{name}.desktop
