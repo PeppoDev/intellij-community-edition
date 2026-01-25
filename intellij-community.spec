@@ -18,7 +18,7 @@
 %global __requires_exclude_from %{_javadir}/%{name}/jbr/.*|%{_javadir}/%{name}/lib/.*|%{_javadir}/%{name}/plugins/.*
 
 Name:          %{appname}-community
-Version:       2025.2.6.1
+Version:       2025.3.2
 Release:       1%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
@@ -26,7 +26,8 @@ License:       Apache-2.0
 URL:           https://www.jetbrains.com/idea/
 
 # Source0: x86_64 binary
-Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/ideaIC-%{version}.tar.gz
+Source0:       https://github.com/JetBrains/intellij-community/releases/download/idea/%{version}/idea-%{version}.tar.gz
+
 
 Source101:     %{name}.xml
 Source102:     %{name}.desktop
@@ -129,7 +130,10 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Wed Jan 14 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
+* Sat Jan 14 2026 User <ruan.barros@peppo.dev>> - 2025.3.2-1
+- Update the bin to 2025.3.2.1
+
+* Wed Jan 14 2026 User <ruan.barros@peppo.dev>> - 2025.2.6-1
 - Update the bin to 2025.2.6.1
 
 * Thu Jan 8 2026 User <ruan.barros@peppo.dev>> - 2025.3.1.1-1
