@@ -18,7 +18,7 @@
 %global __requires_exclude_from %{_javadir}/%{name}/jbr/.*|%{_javadir}/%{name}/lib/.*|%{_javadir}/%{name}/plugins/.*
 
 Name:          %{appname}-community
-Version:       2026.1
+Version:       2026.1.1
 Release:       1%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
@@ -130,25 +130,28 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
-* Wed Mar 25 2026 Ruan <ruan.barros@peppo.dev>> - 2026.1-1
+* Thu Apr 23 2026 Ruan <ruan.barros@peppo.dev> - 2026.1.1-1
 - Update the bin to 2026.1
 
-* Tue Mar 17 2026 Ruan <ruan.barros@peppo.dev>> - 2025.3.4-1
+* Wed Mar 25 2026 Ruan <ruan.barros@peppo.dev> - 2026.1-1
+- Update the bin to 2026.1
+
+* Tue Mar 17 2026 Ruan <ruan.barros@peppo.dev> - 2025.3.4-1
 - Update the bin to 2025.3.4
 
-* Mon Feb 23 2026 Ruan <ruan.barros@peppo.dev>> - 2025.3.3-1
+* Mon Feb 23 2026 Ruan <ruan.barros@peppo.dev> - 2025.3.3-1
 - Update the bin to 2025.3.3
 
-* Sat Jan 24 2026 Ruan <ruan.barros@peppo.dev>> - 2025.3.2-1
+* Sat Jan 24 2026 Ruan <ruan.barros@peppo.dev> - 2025.3.2-1
 - Update the bin to 2025.3.2.1
 
-* Wed Jan 14 2026 Ruan <ruan.barros@peppo.dev>> - 2025.2.6-1
+* Wed Jan 14 2026 Ruan <ruan.barros@peppo.dev> - 2025.2.6-1
 - Update the bin to 2025.2.6.1
 
-* Thu Jan 8 2026 Ruan <ruan.barros@peppo.dev>> - 2025.3.1.1-1
+* Thu Jan 8 2026 Ruan <ruan.barros@peppo.dev> - 2025.3.1.1-1
 - Update the bin to 2025.3.1.1
 
-* Wed Dec 24 2025 Ruan <ruan.barros@peppo.dev>> - 2025.3.1-2
+* Wed Dec 24 2025 Ruan <ruan.barros@peppo.dev> - 2025.3.1-2
 - Update desktop entry
 
 * Sun Dec 21 2025 Ruan <ruan.barros@peppo.dev> - 2025.3.1-1
