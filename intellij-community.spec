@@ -18,7 +18,7 @@
 %global __requires_exclude_from %{_javadir}/%{name}/jbr/.*|%{_javadir}/%{name}/lib/.*|%{_javadir}/%{name}/plugins/.*
 
 Name:          %{appname}-community
-Version:       2026.2.1
+Version:       2026.2.3
 Release:       1%{?dist}
 
 Summary:       IntelliJ IDEA Community Edition
