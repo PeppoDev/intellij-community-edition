@@ -130,6 +130,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/%{name}.metainfo.xml
 
 %changelog
+* Wed Sep 16 2026 Ruan <ruan.barros@peppo.dev> - 2026.2.3-1
+- Update the bin to 2026.2.3
+
 * Wed Aug 5 2026 Ruan <ruan.barros@peppo.dev> - 2026.2.1-1
 - Update the bin to 2026.2.1
 
